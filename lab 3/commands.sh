@@ -21,7 +21,7 @@ sudo usermod -a itiuser2  -G os_team
 # sended in reop
 
 #send screenshot of all processes in tree mod
-# sended into file
+# sended into file pstree.txt
 
 #execute command tail -f /var/log/syslog
 tail -f /var/log/syslog
