@@ -1,0 +1,158 @@
+systemd-+-ModemManager---2*[{ModemManager}]
+        |-NetworkManager---2*[{NetworkManager}]
+        |-VBoxSVC-+-VirtualBoxVM---31*[{VirtualBoxVM}]
+        |         `-16*[{VBoxSVC}]
+        |-VBoxXPCOMIPCD
+        |-accounts-daemon---2*[{accounts-daemon}]
+        |-acpid
+        |-agetty
+        |-anydesk---2*[{anydesk}]
+        |-apache2---5*[apache2]
+        |-avahi-daemon---avahi-daemon
+        |-bwrap---xdg-dbus-proxy---{xdg-dbus-proxy}
+        |-chrome_crashpad---2*[{chrome_crashpad}]
+        |-chrome_crashpad---{chrome_crashpad}
+        |-colord---2*[{colord}]
+        |-containerd---13*[{containerd}]
+        |-cron
+        |-csd-printer---2*[{csd-printer}]
+        |-cups-browsed---2*[{cups-browsed}]
+        |-cupsd
+        |-2*[dbus-daemon]
+        |-dbus-launch
+        |-dnsmasq---dnsmasq
+        |-dockerd---17*[{dockerd}]
+        |-geoclue---2*[{geoclue}]
+        |-gnome-keyring-d-+-ssh-agent
+        |                 `-3*[{gnome-keyring-d}]
+        |-ibus-daemon-+-ibus-dconf---3*[{ibus-dconf}]
+        |             |-ibus-engine-sim---2*[{ibus-engine-sim}]
+        |             |-ibus-extension----3*[{ibus-extension-}]
+        |             |-ibus-ui-gtk3---3*[{ibus-ui-gtk3}]
+        |             `-2*[{ibus-daemon}]
+        |-ibus-x11---2*[{ibus-x11}]
+        |-irqbalance---{irqbalance}
+        |-2*[kerneloops]
+        |-libvirtd---18*[{libvirtd}]
+        |-lightdm-+-Xorg---{Xorg}
+        |         |-lightdm-+-cinnamon-sessio-+-agent---2*[{agent}]
+        |         |         |                 |-applet.py
+        |         |         |                 |-blueman-applet---3*[{blueman-applet}]
+        |         |         |                 |-cinnamon-killer---3*[{cinnamon-killer}]
+        |         |         |                 |-cinnamon-launch-+-cinnamon-+-VirtualBox---9*[{VirtualBox}]
+        |         |         |                 |                 |          |-chrome-+-2*[cat]
+        |         |         |                 |                 |          |        |-chrome---chrome---22*[{chrome}]
+        |         |         |                 |                 |          |        |-chrome-+-chrome-+-chrome---5*[{chrome}]
+        |         |         |                 |                 |          |        |        |        |-3*[chrome---13*[{chrome}]]
+        |         |         |                 |                 |          |        |        |        |-9*[chrome---12*[{chrome}]]
+        |         |         |                 |                 |          |        |        |        |-5*[chrome---14*[{chrome}]]
+        |         |         |                 |                 |          |        |        |        |-chrome---24*[{chrome}]
+        |         |         |                 |                 |          |        |        |        |-3*[chrome---15*[{chrome}]]
+        |         |         |                 |                 |          |        |        |        |-2*[chrome---18*[{chrome}]]
+        |         |         |                 |                 |          |        |        |        |-chrome---16*[{chrome}]
+        |         |         |                 |                 |          |        |        |        |-chrome---11*[{chrome}]
+        |         |         |                 |                 |          |        |        |        `-chrome---6*[{chrome}]
+        |         |         |                 |                 |          |        |        `-nacl_helper
+        |         |         |                 |                 |          |        |-2*[chrome---7*[{chrome}]]
+        |         |         |                 |                 |          |        `-27*[{chrome}]
+        |         |         |                 |                 |          |-nemo-+-bwrap---bwrap---vlc.bin---17*[{vlc.bin}]
+        |         |         |                 |                 |          |      `-3*[{nemo}]
+        |         |         |                 |                 |          |-xed---3*[{xed}]
+        |         |         |                 |                 |          `-12*[{cinnamon}]
+        |         |         |                 |                 `-5*[{cinnamon-launch}]
+        |         |         |                 |-csd-a11y-settin---3*[{csd-a11y-settin}]
+        |         |         |                 |-csd-automount---3*[{csd-automount}]
+        |         |         |                 |-csd-background---3*[{csd-background}]
+        |         |         |                 |-csd-clipboard---2*[{csd-clipboard}]
+        |         |         |                 |-csd-color---3*[{csd-color}]
+        |         |         |                 |-csd-housekeepin---3*[{csd-housekeepin}]
+        |         |         |                 |-csd-keyboard---3*[{csd-keyboard}]
+        |         |         |                 |-csd-media-keys---3*[{csd-media-keys}]
+        |         |         |                 |-csd-power---3*[{csd-power}]
+        |         |         |                 |-csd-print-notif---2*[{csd-print-notif}]
+        |         |         |                 |-csd-screensaver---2*[{csd-screensaver}]
+        |         |         |                 |-csd-wacom---2*[{csd-wacom}]
+        |         |         |                 |-csd-xsettings---3*[{csd-xsettings}]
+        |         |         |                 |-diodon---11*[{diodon}]
+        |         |         |                 |-evolution-alarm---5*[{evolution-alarm}]
+        |         |         |                 |-nemo-desktop---3*[{nemo-desktop}]
+        |         |         |                 |-nm-applet---3*[{nm-applet}]
+        |         |         |                 |-polkit-gnome-au---2*[{polkit-gnome-au}]
+        |         |         |                 |-redshift-gtk-+-redshift---3*[{redshift}]
+        |         |         |                 |              `-2*[{redshift-gtk}]
+        |         |         |                 |-sxhkd
+        |         |         |                 |-xapp-sn-watcher---3*[{xapp-sn-watcher}]
+        |         |         |                 |-xiccd---2*[{xiccd}]
+        |         |         |                 `-3*[{cinnamon-sessio}]
+        |         |         `-2*[{lightdm}]
+        |         `-2*[{lightdm}]
+        |-mintUpdate---6*[{mintUpdate}]
+        |-mintreport-tray---3*[{mintreport-tray}]
+        |-mysqld---39*[{mysqld}]
+        |-networkd-dispat
+        |-ntpd---{ntpd}
+        |-packagekitd---2*[{packagekitd}]
+        |-polkitd---2*[{polkitd}]
+        |-rsyslogd---3*[{rsyslogd}]
+        |-rtkit-daemon---2*[{rtkit-daemon}]
+        |-systemd-+-(sd-pam)
+        |         |-at-spi-bus-laun-+-dbus-daemon
+        |         |                 `-3*[{at-spi-bus-laun}]
+        |         |-at-spi2-registr---2*[{at-spi2-registr}]
+        |         |-dbus-daemon
+        |         |-dconf-service---2*[{dconf-service}]
+        |         |-evolution-addre---5*[{evolution-addre}]
+        |         |-evolution-calen---8*[{evolution-calen}]
+        |         |-evolution-sourc---3*[{evolution-sourc}]
+        |         |-flatpak-session---2*[{flatpak-session}]
+        |         |-goa-daemon---3*[{goa-daemon}]
+        |         |-goa-identity-se---2*[{goa-identity-se}]
+        |         |-gvfs-afc-volume---3*[{gvfs-afc-volume}]
+        |         |-gvfs-goa-volume---2*[{gvfs-goa-volume}]
+        |         |-gvfs-gphoto2-vo---2*[{gvfs-gphoto2-vo}]
+        |         |-gvfs-mtp-volume---2*[{gvfs-mtp-volume}]
+        |         |-gvfs-udisks2-vo---3*[{gvfs-udisks2-vo}]
+        |         |-gvfsd-+-gvfsd-dnssd---2*[{gvfsd-dnssd}]
+        |         |       |-gvfsd-http---2*[{gvfsd-http}]
+        |         |       |-gvfsd-network---3*[{gvfsd-network}]
+        |         |       |-gvfsd-trash---2*[{gvfsd-trash}]
+        |         |       `-2*[{gvfsd}]
+        |         |-gvfsd-fuse---5*[{gvfsd-fuse}]
+        |         |-gvfsd-metadata---2*[{gvfsd-metadata}]
+        |         |-ibus-portal---2*[{ibus-portal}]
+        |         |-obexd
+        |         |-p11-kit-server
+        |         |-pipewire---{pipewire}
+        |         |-pipewire-media----{pipewire-media-}
+        |         |-pulseaudio---3*[{pulseaudio}]
+        |         |-tracker-miner-f---5*[{tracker-miner-f}]
+        |         |-xdg-desktop-por-+-sh---pxgsettings---3*[{pxgsettings}]
+        |         |                 `-4*[{xdg-desktop-por}]
+        |         |-xdg-desktop-por---3*[{xdg-desktop-por}]
+        |         |-xdg-document-po-+-fusermount3
+        |         |                 `-5*[{xdg-document-po}]
+        |         |-xdg-permission----2*[{xdg-permission-}]
+        |         |-zeitgeist-daemo---2*[{zeitgeist-daemo}]
+        |         `-zeitgeist-fts---2*[{zeitgeist-fts}]
+        |-systemd-journal
+        |-systemd-logind
+        |-systemd-machine
+        |-systemd-resolve
+        |-systemd-udevd
+        |-teams-+-teams---teams-+-teams
+        |       |               `-4*[{teams}]
+        |       |-teams-+-teams---13*[{teams}]
+        |       |       |-teams-+-teams
+        |       |       |       `-17*[{teams}]
+        |       |       `-teams-+-teams
+        |       |               `-12*[{teams}]
+        |       |-2*[teams---4*[{teams}]]
+        |       |-teams---45*[{teams}]
+        |       `-32*[{teams}]
+        |-udisksd---4*[{udisksd}]
+        |-upowerd---2*[{upowerd}]
+        |-wpa_supplicant
+        `-xfce4-terminal-+-3*[bash]
+                         |-2*[bash---ssh]
+                         |-bash---bash---bash---pstree
+                         `-2*[{xfce4-terminal}]
