@@ -31,5 +31,10 @@ tail -f /var/log/syslog
 ps -aux | grep tail
 kill 331254 #number is pid
 
+# another way
+kill $(pgrep tail)
+
+
+
 	
 
