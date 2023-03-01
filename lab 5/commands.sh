@@ -28,3 +28,4 @@ sudo apt search gparted
 sudo apt install gparted
 
 #navigate and use gparted to detect the the new partition.
+sudo gparted /dev/loop0
